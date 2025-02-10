@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukraine Educational Damage Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            margin: 20px; 
+        }
+        #map { 
+            height: 75vh; 
+            width: 100%; 
+            margin: auto; 
+        }
+        #controls { 
+            margin: 10px; 
+        }
+        input { 
+            padding: 5px; 
+            margin: 5px; 
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 90%;
+            margin: auto;
+            text-align: left;
+        }
+        .left, .right {
+            width: 48%;
+        }
+        .sources {
+            font-size: 0.8em;
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Educational Damage in Ukraine</h1>
+
+    <div class="container">
+        <div class="left">
+            <h2>Research Question</h2>
+            <p>How has the war in Ukraine impacted the country's educational infrastructure?</p>
+        </div>
+        <div class="right">
+            <h2>Visualization Explanation</h2>
+            <p>
+                - Event data (types of attacks): Displayed as colored markers based on event type.<br>
+                - University locations: Represented with distinct markers, size varies by student population.<br>
+                - Filtering: Users can filter events by date.<br>
+                - Search: Users can find universities by name.<br>
+            </p>
+        </div>
+    </div>
+
+    <div id="controls">
+        <label for="dateFilter">Filter by Date:</label>
+        <input type="date" id="dateFilter" />
+        <button onclick="filterEvents()">Filter</button>
+        <label for="search">Search University:</label>
+        <input type="text" id="search" placeholder="Enter university name..." />
+    </div>
+
+    <div id="map"></div>
+
+    <div class="sources">
+        <h3>Sources</h3>
+        <p>Some code adapted from:
+            <ul>
+                <li><a href="https://leafletjs.com/">Leaflet.js Documentation</a></li>
+                <li><a href="https://www.papaparse.com/">PapaParse CSV Library</a></li>
+                <li><a href="https://d3js.org/">D3.js Documentation</a></li>
+            </ul>
+        </p>
+    </div>
+
+    <script src="sketch.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

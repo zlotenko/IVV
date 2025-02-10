@@ -1,0 +1,1108 @@
+[
+    {
+        "name": "Pavlo Tychyna Uman State Pedagogical University",
+        "latitude": 48.74916666666667,
+        "longitude": 30.223611111111108,
+        "students": 8000
+    },
+    {
+        "name": "Nizhyn Gogol State University",
+        "latitude": 51.052499999999995,
+        "longitude": 31.880833333333335,
+        "students": 8500
+    },
+    {
+        "name": "Bukovinian State Medical University",
+        "latitude": 48.2914,
+        "longitude": 25.9322,
+        "students": 5284
+    },
+    {
+        "name": "Medical Academy Named after S.I. Georgievsky of V.I. Vernadsky CFU",
+        "latitude": 44.96083333333333,
+        "longitude": 34.08777777777778,
+        "students": 5000,
+        "occupied": "True",
+        "info": "With the annexation of Crimea by Russia, the university continues to operate as a branch of the Vernadsky Crimean Federal University under the rule of the Russian occupiers."
+    },
+    {
+        "name": "Tavrida National V.I. Vernadsky University",
+        "latitude": 50.41870530980248, 
+        "longitude": 30.538443827025517,
+        "students": 3200,
+        "relocated": "True",
+        "info": "Due to the occupation of Crimea by Russia in 2014, the university moved to Kyiv and resumed its work in 2016."
+    },
+    {
+        "name": "Berdiansk State Pedagogical University",
+        "latitude": 47.81938194501351, 
+        "longitude": 35.183512513355296,
+        "students": 4206,
+        "relocated": "True",
+        "info": "Due to the occupation of Berdiansk in 2022, the university was temporarily moved to Zaporizhzhia."
+    },
+
+    {
+        "name": "Alfred Nobel University",
+        "latitude": 48.472,
+        "longitude": 35.0427,
+        "students": 3400
+    },
+    {
+        "name": "Dnipro Medical Institute of Conventional and Alternative Medicine",
+        "latitude": 48.44504,
+        "longitude": 35.05705,
+        "students": 600
+    },
+    {
+        "name": "Dnipro National University of Rail Transport",
+        "latitude": 48.434,
+        "longitude": 35.048,
+        "students": 10000
+    },
+    {
+        "name": "Dnipro Polytechnic",
+        "latitude": 48.4556,
+        "longitude": 35.0622,
+        "students": 16000
+    },
+    {
+        "name": "Dnipro State Medical University",
+        "latitude": 48.461111111111116,
+        "longitude": 35.056666666666665,
+        "students": 4500
+    },
+    {
+        "name": "Dnipro State University of Internal Affairs",
+        "latitude": 48.445,
+        "longitude": 35.0528,
+        "students": 4500
+    },
+    {
+        "name": "National Metallurgical Academy of Ukraine",
+        "latitude": 48.45320914460054,
+        "longitude": 35.061576484656406,
+         "students": 15000
+    },
+    {
+        "name": "Oles Honchar Dnipro National University",
+        "latitude": 48.435,
+        "longitude": 35.036,
+        "students": 20000
+    },
+    {
+        "name": "Prydniprovska State Academy of Civil Engineering and Architecture",
+        "latitude": 48.453161111111115,
+        "longitude": 35.05388055555555,
+        "students": 9000
+    },
+    {
+        "name": "Donetsk National University of Economics and Trade named after Mykhailo Tugan-Baranovsky",
+        "latitude": 47.88019444444444,
+        "longitude": 33.36058333333334,
+        "students": 2600,
+        "relocated": "True",
+        "info": "In September 2014, due to the Russian occupation of Donetsk, it was evacuated to the city of Kryvyi Rih. In 2024, it was reorganized by joining Kryvyi Rih National University."
+    },
+       {
+        "name": "Donbas State Pedagogical University",
+        "latitude": 48.437108104817575, 
+        "longitude": 35.03499029620189,
+        "students": 1890,
+        "relocated": "True",
+        "info": "Relocated to Dnipro in May, 2022."
+    },
+       {
+        "name": "Makiivka Institute of Economics and Humanities",
+        "latitude": 48.73403234929801, 
+        "longitude": 37.58523903855023,
+        "students": 3000,
+        "relocated": "True",
+        "info": "Relocated to Kramatorsk."
+    },
+    {
+        "name": "Kryvyi Rih National University",
+        "latitude": 47.9055,
+        "longitude": 33.4013,
+        "students": 20000
+    },
+    {
+        "name": "Kryvyi Rih State Pedagogical University",
+        "latitude": 47.907377,
+        "longitude": 33.411869,
+        "students": 6000
+    },
+    {
+        "name": "Kryvyi Rih State University of Economics and Technology",
+        "latitude": 47.88773592581135,
+        "longitude": 33.386321380821194,
+        "students": 5000
+    },
+    {
+        "name": "Donbas National Academy of Civil Engineering and Architecture",
+        "latitude": 48.74912, 
+        "longitude": 37.59407,
+        "students": 8000,
+        "relocated": "True",
+        "info": "Due to the Russian occupation of part of Ukraine, the university moved from Makiivka to Kramatorsk, to the buildings of the Donbas State Engineering Academy."
+    },
+    {
+        "name": "Donetsk Law Institute of the Ministry of Internal Affairs of Ukraine",
+        "latitude": 47.89857051957171,
+        "longitude": 33.40612415383736,
+        "students": 4000,
+        "relocated": "True",
+        "info": "In July 2014, the Donetsk Law Institute of the Ministry of Internal Affairs of Ukraine was temporarily transferred from Donetsk to Mariupol, and in October 2014, according to the order of the Ministry of Internal Affairs of Ukraine, it was relocated to Kryvyi Rih. On July 4, 2023, Luhansk State University of Internal Affairs named after Eduard Didorenko, which was moved from Severodonetsk to Mykolaiv in 2014 and to Ivano-Frankivsk in 2022, joined the university."
+    },
+    {
+        "name": "Donetsk National Technical University",
+        "latitude": 49.3580633789126,
+        "longitude": 23.51106375811714,
+        "students": 4000, 
+        "relocated": "True",
+        "info": "Was relocated 3 times. In 2014, as a result of the occupation of Donetsk during the Russian-Ukrainian war, the university was moved to Pokrovsk, in 2022 - to Lutsk, in 2024 - to Drohobych."
+
+    },
+    {
+        "name": "Mariupol State University", 
+        "latitude": 50.42490848772033, 
+        "longitude": 30.47184049448741,
+        "students": 3500,
+        "relocated": "True",
+        "info": "As a result of Russia's full-scale invasion of Ukraine, all buildings of Mariupol State University were completely destroyed. By order of the Ministry of Education and Science of Ukraine, the university was relocated to Kyiv, where it resumed its work."
+    },
+    {
+        "name": "Pryazovskyi State Technical University",
+        "latitude": 48.45551457328377, 
+        "longitude": 35.0518378423282,
+        "students": 2500,
+        "relocated": "True",
+        "info": "In March 2022, two super-heavy enemy bombs hit the 5th building of the university. Then there were new hits, damage to other buildings, and in some places complete destruction. In April 2022, the university moved to Dnipro, where it resumed its work."
+    },
+     {
+        "name": "Donbass State Engineering Academy ",
+        "latitude": 49.55139692373363, 
+        "longitude": 25.59974991162166,
+        "students": 3000,
+        "relocated": "True",
+        "info": "In 2022, due to Russia's invasion of Ukraine, the Donbas State Engineering Academy was relocated to Ternopil."
+    },
+    {
+        "name": "Ivano-Frankivsk National Medical University",
+        "latitude": 48.9216,
+        "longitude": 24.7088,
+        "students": 4800
+    },
+    {
+        "name": "Ivano-Frankivsk National Technical University of Oil and Gas",
+        "latitude": 48.9293,
+        "longitude": 24.6964,
+        "students": 10000
+    },
+    {
+        "name": "King Danylo University",
+        "latitude": 48.915277777777774,
+        "longitude": 24.711111111111112,
+        "students": 3000
+    },
+    {
+        "name": "Vasyl Stefanyk Precarpathian National University",
+        "latitude": 48.91520555555555,
+        "longitude": 24.701191666666666,
+        "students": 18000
+    },
+    {
+        "name": "H.S. Skovoroda Kharkiv National Pedagogical University",
+        "latitude": 50.02006384789782,
+        "longitude": 36.318556580966884,
+        "students": 10000
+    },
+    {
+        "name": "Kharkiv College of Textiles and Design",
+        "latitude": 50.00817516593522,
+        "longitude": 36.237140811653276,
+        "students": 914
+    },
+    {
+        "name": "Kharkiv National Academy of Urban Economy",
+        "latitude": 49.995,
+        "longitude": 36.242,
+        "students": 15000
+    },
+    {
+        "name": "Kharkiv National Automobile and Highway University",
+        "latitude": 50.0062610539294,
+        "longitude": 36.24327053678647,
+        "students": 8182
+    },
+    {
+        "name": "Kharkiv National Kotlyarevsky University of Arts",
+        "latitude": 49.991139,
+        "longitude": 36.232028,
+        "students": 900
+    },
+    {
+        "name": "Kharkiv National Medical University",
+        "latitude": 50.0091,
+        "longitude": 36.2285,
+        "students": 10000
+    },
+    {
+        "name": "Kharkiv National University of Economics",
+        "latitude": 50.013888888888886,
+        "longitude": 36.223888888888894,
+        "students": 9972
+    },
+    {
+        "name": "Kharkiv National University of Radioelectronics",
+        "latitude": 50.015,
+        "longitude": 36.22777777777778,
+        "students": 8000
+    },
+    {
+        "name": "Kharkiv Polytechnic Institute",
+        "latitude": 49.99911862595717,
+        "longitude": 36.24832908096539,
+        "students": 24000
+    },
+    {
+        "name": "Kharkiv State Academy of Design and Arts",
+        "latitude": 49.99951446493142,
+        "longitude": 36.24518086562184,
+        "students": 1450
+    },
+    {
+        "name": "Kharkiv State Academy of Physical Culture",
+        "latitude": 50.00415,
+        "longitude": 36.21732,
+        "students": 2000
+    },
+    {
+        "name": "Kharkiv State University of Food Technology and Trade",
+        "latitude": 50.041806,
+        "longitude": 36.194583,
+        "students": 5518
+    },
+    {
+        "name": "National Aerospace University – Kharkiv Aviation Institute", 
+        "latitude": 50.042890046578606,
+        "longitude": 36.28468268096845,
+        "students": 6876
+    },
+    {
+        "name": "National University of Kharkiv", 
+        "latitude": 50.004346790738694,
+        "longitude": 36.227923225145254,
+        "students": 17368
+    },
+    {
+        "name": "People Ukrainian Academy",
+        "latitude": 50.005,
+        "longitude": 36.257222222222225,
+        "students": 1174
+    },
+    {
+        "name": "V. Dokuchaev Kharkiv National Agrarian University",
+        "latitude": 49.89484471499395,
+        "longitude":  36.44817678095823,
+        "students": 3500
+    },
+    {
+        "name": "Yaroslav Mudryi National Law University",
+        "latitude": 50.004935,
+        "longitude": 36.247811,
+        "students": 9591
+    },
+    {
+        "name": "Kamyanets-Podilsky Ivan Ohienko National University",
+        "latitude": 48.67530555555555,
+        "longitude": 26.586677777777776,
+        "students": 3083
+    },
+    {
+        "name": "Khmelnytskyi National University",
+        "latitude": 49.40895744475472, 
+        "longitude": 26.96045721161182,
+        "students": 9759
+    },
+    {
+        "name": "Donetsk National Medical University",
+        "latitude": 48.504852954087056,  
+        "longitude": 32.20943453391044,
+        "students": 5000,
+        "relocated": "True",
+        "info": "In the fall of 2014, due to the occupation of part of Ukraine by Russians and terrorist paramilitary groups, Donetsk National University changed its legal and actual addresses and relocated to the territory controlled by Ukraine. The legal address is now in Lyman, and the university is now located in Kramatorsk, Kropyvnytskyi and Mariupol."
+    },
+    {
+        "name": "Classic Private University",
+        "latitude": 47.82416666666667,
+        "longitude": 35.176944444444445,
+        "students": 10000
+    },
+    {
+        "name": "Borys Grinchenko Kyiv Metropolitan University",
+        "latitude": 50.5136,
+        "longitude": 30.6581,
+        "students": 15000
+    },
+    {
+        "name": "Igor Sikorsky Kyiv Polytechnic Institute",
+        "latitude": 50.44972222222222,
+        "longitude": 30.460833333333333,
+        "students": 36000
+    },
+    {
+        "name": "Kyiv Medical University",
+        "latitude": 50.4399,
+        "longitude": 30.5123,
+        "students": 3500
+    },
+    {
+        "name": "Kyiv National I. K. Karpenko-Kary Theatre, Cinema and Television University",
+        "latitude": 50.45388888888889,
+        "longitude": 30.506944444444443,
+        "students": 1590
+    },
+    {
+        "name": "Kyiv National University of Culture and Arts",
+        "latitude": 50.4247,
+        "longitude": 30.5344,
+        "students": 2500
+    },
+    {
+        "name": "Kyiv National University of Technologies and Design", 
+        "latitude": 50.4313166234319,
+        "longitude": 30.538239469354544,
+        "students": 10000
+    },
+    {
+        "name": "Kyiv National University of Trade and Economics",
+        "latitude": 50.465833333333336,
+        "longitude": 30.638055555555557,
+        "students": 40000
+    },
+    {
+        "name": "Military Institute of Telecommunications and Information Technologies",
+        "latitude": 50.421667,
+        "longitude": 30.556944,
+        "students": 1500
+    },
+    {
+        "name": "National Academy of Fine Art and Architecture",
+        "latitude": 50.4587,
+        "longitude": 30.5073,
+        "students": 900
+    },
+    {
+        "name": "National Academy of Internal Affairs",
+        "latitude": 50.432926819016124,
+        "longitude": 30.47238352279062,
+        "students": 18000
+    },
+    {
+        "name": "National Academy of Management",
+        "latitude": 50.43033333333333,
+        "longitude": 30.447194444444445,
+        "students": 2000
+    },
+    {
+        "name": "National Aviation University", 
+        "latitude": 50.44014943490609,
+        "longitude": 30.43038035162702,
+        "students": 25000
+    },
+    {
+        "name": "National Pedagogical Drahomanov University",
+        "latitude": 50.44472222222222,
+        "longitude": 30.506944444444443,
+        "students": 36000
+    },
+    {
+        "name": "National Transport University",
+        "latitude": 50.44,
+        "longitude": 30.5499,
+        "students": 7500
+    },
+    {
+        "name": "National University of Food Technologies", 
+        "latitude": 50.43947208169004,
+        "longitude": 30.509828180996124,
+        "students": 27517
+    },
+    {
+        "name": "National University of Kyiv-Mohyla Academy",
+        "latitude": 50.464444444444446,
+        "longitude": 30.51972222222222,
+        "students": 4000
+    },
+    {
+        "name": "National University of Life and Environmental Sciences of Ukraine",
+        "latitude": 50.38388888888889,
+        "longitude": 30.505555555555556,
+        "students": 31000
+    },
+    {
+        "name": "National University of Ukraine on Physical Education and Sport",
+        "latitude": 50.43083333333333,
+        "longitude": 30.51833333333333,
+        "students": 3000
+    },
+    {
+        "name": "Open International University of Human Development \"Ukraine\"",
+        "latitude": 50.45388888888889,
+        "longitude": 30.369722222222222,
+        "students": 16060
+    },
+    {
+        "name": "Taras Shevchenko National University of Kyiv",
+        "latitude": 50.44190277777778,
+        "longitude": 30.51131388888889,
+        "students": 30000
+    },
+    {
+        "name": "Taurida National V.I. Vernadsky University", 
+        "latitude": 50.420109339388866,
+        "longitude": 30.53853763450299,
+        "students": 17000
+    },
+    {
+        "name": "Ukrainian-American Concordia University", 
+        "latitude": 50.44904610819788,
+        "longitude": 30.495447598945912,
+        "students": 300
+    },
+    {
+        "name": "Ukrainian National Tchaikovsky Academy of Music",
+        "latitude": 50.449,
+        "longitude": 30.5249,
+        "students": 1000
+    },
+    {
+        "name": "Vadym Hetman Kyiv National Economic University",
+        "latitude": 50.45638888888889,
+        "longitude": 30.440833333333334,
+        "students": 20000
+    },
+    {
+        "name": "East Ukrainian Volodymyr Dahl National University",
+        "latitude": 50.42068124504529, 
+        "longitude": 30.53523186935375,
+        "students": 12500,
+        "relocated": "True",
+        "info": "Until October 2014, the university was located in Luhansk, but due to the occupation of the city by the Russian Federation, the institution was moved to Sievierodonetsk. In February 2022, in connection with Russia's full-scale invasion of Ukraine, the university was relocated to Kamianets-Podilskyi, and in October - to Kyiv. In 2018, Donbas State Technical University, which until 2014 was located in Alchevsk and then in Lysychansk, joined the university. Also, in 2021, Luhansk National Agrarian University was merged with the university, which moved from Luhansk to Kharkiv in 2014 and to Starobilsk in 2018."
+    },
+    {
+        "name": "Luhansk State Medical University",
+        "latitude": 50.616192546142166,  
+        "longitude": 26.249417725187936,
+        "students": 1350,
+        "relocated": "True",
+        "info": "Due to the occupation in 2014, the university was moved to Rubizhne. Later, in 2022, due to the hostilities, Luhansk State Medical University moved from Rubizhne to Rivne region."
+
+    },
+     {
+        "name": "Luhansk State Academy of Culture and Arts",
+        "latitude": 50.43499268092449, 
+        "longitude": 30.555391854011216,
+        "students": 350,
+        "relocated": "True",
+        "info": "In 2014, after the occupation of Luhansk, the university was relocated to Kyiv."
+
+    },
+    {
+        "name": "Drohobych State Pedagogical University of Ivan Franko",
+        "latitude": 49.35544,
+        "longitude": 23.50227,
+        "students": 5095
+    },
+    {
+        "name": "Lviv National Agrarian University",
+        "latitude": 49.9,
+        "longitude": 24.092,
+        "students": 18000
+    },
+    {
+        "name": "Danylo Halytsky Lviv National Medical University",
+        "latitude": 49.836,
+        "longitude": 24.049,
+        "students": 6000
+    },
+    {
+        "name": "Ivan Franko National University of Lviv",
+        "latitude": 49.84055555555556,
+        "longitude": 24.022222222222222,
+        "students": 11649
+    },
+    {
+        "name": "Lviv National Academy of Arts",
+        "latitude": 49.825,
+        "longitude": 24.0392,
+        "students": 1172
+    },
+    {
+        "name": "Lviv National Stepan Gzhytsky University of Veterinary Medicine and Biotechnology",
+        "latitude": 49.83694444444445,
+        "longitude": 24.04277777777778,
+        "students": 3014
+    },
+    {
+        "name": "Lviv State University of Physical Culture",
+        "latitude": 49.8412,
+        "longitude": 24.0227,
+        "students": 1800
+    },
+    {
+        "name": "Lviv University of Trade and Economics",
+        "latitude": 49.83666,
+        "longitude": 24.03774,
+        "students": 4728
+    },
+    {
+        "name": "National Forestry and Wood Technology University of Ukraine",
+        "latitude": 49.825,
+        "longitude": 24.0033,
+        "students": 7000
+    },
+    {
+        "name": "Ukrainian Academy of Printing", 
+        "latitude": 49.86995066441781,
+        "longitude": 24.00847446084379,
+        "students": 6600
+    },
+    {
+        "name": "Ukrainian Catholic University", 
+        "latitude": 49.82311856228978,
+        "longitude": 24.038141726450743,
+        "students": 2300
+    },
+    {
+        "name": "Admiral Makarov National University of Shipbuilding",
+        "latitude": 46.987908,
+        "longitude": 32.002316,
+        "students": 12000
+    },
+    {
+        "name": "Mykolayiv State Agrarian University", 
+        "latitude": 46.96491386464343,
+        "longitude": 31.965444223088014,
+        "students": 8000
+    },
+    {
+        "name": "Filatov Institute of Eye Diseases and Tissue Therapy",
+        "latitude": 46.45427,
+        "longitude": 30.76177,
+        "students": 2731
+    },
+    {
+        "name": "K. D. Ushinsky South Ukrainian National Pedagogical University",
+        "latitude": 46.4805,
+        "longitude": 30.7213,
+        "students": 6263
+    },
+    {
+        "name": "National University Odesa Law Academy", 
+        "latitude": 46.442475139301656,
+        "longitude": 30.747680553740896,
+        "students": 17000
+    },
+    {
+        "name": "Odesa Maritime Academy",
+        "latitude": 46.48361111111111,
+        "longitude": 30.714166666666667,
+        "students": 8441
+    },
+    {
+        "name": "Odesa National Academy of Food Technologies", 
+        "latitude": 46.48723494986733,
+        "longitude": 30.731870216969494,
+        "students": 15000
+    },
+    {
+        "name": "Odesa National Academy of Telecommunications",
+        "latitude": 46.4825,
+        "longitude": 30.7234,
+        "students": 7395
+    },
+    {
+        "name": "Odesa National Economics University",
+        "latitude": 46.4784,
+        "longitude": 30.7418,
+        "students": 10000
+    },
+    {
+        "name": "Odesa National Maritime University", 
+        "latitude": 46.48416360660985,
+        "longitude": 30.719521211415476,
+        "students": 5340
+    },
+    {
+        "name": "Odesa National Medical University",
+        "latitude": 46.4934,
+        "longitude": 30.7257,
+        "students": 2500
+    },
+    {
+        "name": "Odesa National Polytechnic University",
+        "latitude": 46.46055555555556,
+        "longitude": 30.75138888888889,
+        "students": 15000
+    },
+    {
+        "name": "Odesa University",
+        "latitude": 46.4875,
+        "longitude": 30.7312,
+        "students": 7500
+    },
+    {
+        "name": "Kremenchuk Flight College of National Aviation University",
+        "latitude": 49.0664,
+        "longitude": 33.4015,
+        "students": 1049
+    },
+    {
+        "name": "Kremenchuk Mykhailo Ostrohradskyi National University",
+        "latitude": 49.0603,
+        "longitude": 33.4103,
+        "students": 4000
+    },
+    {
+        "name": "Poltava National Technical Yuri Kondratyuk University",
+        "latitude": 49.5761,
+        "longitude": 34.5671,
+        "students": 10000
+    },
+    {
+        "name": "Poltava National V. G. Korolenko Pedagogical University",
+        "latitude": 49.59166666666667,
+        "longitude": 34.55583333333333,
+        "students": 4925
+    },
+    {
+        "name": "Poltava State Medical and Dental University",
+        "latitude": 49.582815636045574, 
+        "longitude": 34.54895163860841,
+        "students": 3627
+    },
+    {
+        "name": "Poltava State Medical University", 
+        "latitude": 49.58215996942242,
+        "longitude": 34.54799468093659,
+        "students": 3627
+    },
+    {
+        "name": "Poltava University of Economics and Trade",
+        "latitude": 49.595,
+        "longitude": 34.543,
+        "students": 4916
+    },
+    {
+        "name": "University of Luhansk",
+        "latitude": 50.008221151409984, 
+        "longitude": 32.998250023294275,
+        "students": 9282,
+        "relocated": "True",
+        "info": "University was forcibly relocated to Ukraine-controlled Starobilsk in 2014 and, beginning in 2022, was later relocated to Poltava, Myrhorod, and Lubny, due to the Russian invasion of Ukraine."
+    },
+    {
+        "name": "National University of Ostroh Academy",
+        "latitude": 50.3293,
+        "longitude": 26.5127,
+        "students": 2599
+    },
+    {
+        "name": "Hlukhiv National Pedagogical University of Oleksandr Dovzhenko",
+        "latitude": 51.67515,
+        "longitude": 33.91018,
+        "students": 5000
+    },
+    {
+        "name": "Sumy National Agrarian University",
+        "latitude": 50.88333333333333,
+        "longitude": 34.778055555555554,
+        "students": 11000
+    },
+    {
+        "name": "Ternopil Ivan Puluj National Technical University", 
+        "latitude": 49.551158840114944,
+        "longitude": 25.600742076698545,
+        "students": 8200
+    },
+    {
+        "name": "Ternopil National Medical University",
+        "latitude": 49.551667,
+        "longitude": 25.590556,
+        "students": 4726
+    },
+    {
+        "name": "Ternopil Volodymyr Hnatiuk National Pedagogical University", 
+        "latitude": 49.54585972661292,
+        "longitude": 25.56606981532381,
+        "students": 7209
+    },
+    {
+        "name": "West Ukrainian National University",
+        "latitude": 49.5536,
+        "longitude": 25.5617,
+        "students": 24000
+    },
+    {
+        "name": "Vasyl Stus Donetsk National University",
+        "latitude": 49.24467369075233,
+        "longitude": 28.471052461049982,
+        "students": 4200,
+        "relocated": "True",
+        "info": "In September 2014, due to the war in eastern Ukraine, the Ministry of Education and Science announced the relocation of the university from Donetsk to Vinnytsia. On November 3, 2014, the university started the academic year in Vinnytsia."
+
+    },
+    {
+        "name": "Vinnytsia National Technical University", 
+        "latitude": 49.23398865585143,
+        "longitude": 28.411571092020324,
+        "students": 5000
+    },
+    {
+        "name": "Vinnytsia State Pedagogical University of Mykhailo Kotsyubynsky", 
+        "latitude": 49.24195999757658,
+        "longitude": 28.496476896256844,
+        "students": 5554
+    },
+    {
+        "name": "Lesya Ukrainka Volyn National University",
+        "latitude": 50.74718240971944, 
+        "longitude": 25.331253988422887,
+        "students": 12369
+    },
+    {
+        "name": "Lutsk National Technical University",
+        "latitude": 50.7258,
+        "longitude": 25.296,
+        "students": 10658
+    },
+    {
+        "name": "Transcarpathian State University",
+        "latitude": 48.6063,
+        "longitude": 22.265,
+        "students": 3500
+    },
+    {
+        "name": "Uzhhorod National University", 
+        "latitude": 48.635451313444456,
+        "longitude": 22.29063976129228,
+        "students": 13600
+    },
+    {
+        "name": "Bogdan Khmelnitsky Melitopol State Pedagogical University",
+        "latitude": 47.80980206893835, 
+        "longitude": 35.05610326732379,
+        "students": 2581,
+        "relocated": "True",
+        "info": "Due to the occupation of Melitopol in 2022, the university was temporarily moved to Zaporizhzhia."
+    },
+        {
+        "name": "Tavria State Agrotechnological University",
+        "latitude": 47.819360332736316,
+        "longitude": 35.1834159538322,
+        "students": 4000,
+        "relocated": "True",
+        "info": "Due to the occupation of Melitopol in 2022, the university was temporarily moved to Zaporizhzhia."
+    },
+         {
+        "name": "Kherson State Maritime Academy",
+        "latitude": 46.46182035631566, 
+        "longitude": 30.74620582490628,
+        "students": 5000,
+        "relocated": "True",
+        "info": "Due to the occupation of Kherson from 2 March 2022 until 11 November 2022, the university was temporarily moved to Odesa."
+    },
+       {
+        "name": "Kherson State Agrarian and Economic University",
+        "latitude": 48.503953737974356, 
+        "longitude": 32.21379469620643,
+        "students": 3052,
+        "relocated": "True",
+        "info": "Due to the occupation of Kherson from 2 March 2022 until 11 November 2022, the university was temporarily moved to Kropyvnytskyi."
+    },
+       {
+        "name": "Kherson State University",
+        "latitude": 48.91912582556283,
+        "longitude": 24.705060223219252,
+        "students": 2964,
+        "relocated": "True",
+        "info": "Due to the occupation of Kherson from 2 March 2022 until 11 November 2022, the university was temporarily moved to Ivano-Frankivsk."
+    },
+      {
+        "name": "Kherson National Technical University",
+        "latitude": 49.408426631266565, 
+        "longitude": 26.95922198092464,
+        "students": 1726,
+        "relocated": "True",
+        "info": "Due to the occupation of Kherson from 2 March 2022 until 11 November 2022, the university was temporarily moved to Khmelnytskyi."
+    },
+    {
+        "name": "Transcarpathian Academy of Arts", 
+        "latitude": 48.62183983610108,
+        "longitude": 22.302573103619597,
+        "students": 568
+    },
+    {
+        "name": "Zaporizhzhia National University",
+        "latitude": 47.82,
+        "longitude": 35.1817,
+        "students": 16000
+    },
+    {
+        "name": "Zaporizhzhia Polytechnic National University",
+        "latitude": 47.8175,
+        "longitude": 35.18444444444444,
+        "students": 7403
+    },
+    {
+        "name": "Zaporizhzhia State Engineering Academy",
+        "latitude": 47.86083333333333,
+        "longitude": 35.102222222222224,
+        "students": 3000
+    },
+    {
+        "name": "Zaporizhzhia State Medical University",
+        "latitude": 47.83619,
+        "longitude": 35.11502,
+        "students": 8879
+    },
+    {
+        "name": "Polissia National University",
+        "latitude": 50.24861,
+        "longitude": 28.66861,
+        "students": 5811
+    },
+    {
+        "name": "Chernivtsi University", 
+        "latitude": 49.297305209679266,
+        "longitude": 25.925013011002786,
+        "students": 19227
+    },
+    {
+        "name": "Donetsk State University of Management",
+        "latitude": 47.13296874889537, 
+        "longitude": 37.5597018114582,
+        "students": 7550,
+        "occupied": "True",
+        "info": "There is no information about what happened to the university after February 24, 2022, as most of Mariupol was wiped off the map and most of the population was killed by Russians."
+    },
+    {
+        "name": "Kharkiv National University of Economics",
+        "latitude": 50.013888888888886,
+        "longitude": 36.223888888888894,
+        "students": 9972
+    },
+    {
+        "name": "Kryvyi Rih National University",
+        "latitude": 47.9055,
+        "longitude": 33.4013,
+        "students": 20000
+    },
+    {
+        "name": "Kyiv National Linguistic University",
+        "latitude": 50.426944444444445,
+        "longitude": 30.51833333333333,
+        "students": 5772
+    },
+    {
+        "name": "Lviv University",
+        "latitude": 49.84055555555556,
+        "longitude": 24.022222222222222,
+        "students": 11649
+    },
+    {
+        "name": "Odesa University",
+        "latitude": 46.4875,
+        "longitude": 30.7312,
+        "students": 7500
+    },
+    {
+        "name": "Oles Honchar Dnipro National University",
+        "latitude": 48.435,
+        "longitude": 35.036,
+        "students": 20000
+    },
+    {
+        "name": "Poltava V.G. Korolenko National Pedagogical University",
+        "latitude": 49.59166666666667,
+        "longitude": 34.55583333333333,
+        "students": 4925
+    },
+    {
+        "name": "Admiral Makarov National University of Shipbuilding",
+        "latitude": 46.987908,
+        "longitude": 32.002316,
+        "students": 12000
+    },
+    {
+        "name": "Chernihiv Polytechnic National University",
+        "latitude": 51.505,
+        "longitude": 31.334999999999997,
+        "students": 5631
+    },
+    {
+        "name": "Dnipro National University of Rail Transport",
+        "latitude": 48.434,
+        "longitude": 35.048,
+        "students": 10000
+    },
+    {
+        "name": "Ivano-Frankivsk National Technical University of Oil and Gas",
+        "latitude": 48.9293,
+        "longitude": 24.6964,
+        "students": 10000
+    },
+    {
+        "name": "Kharkiv National University of Radioelectronics",
+        "latitude": 50.015,
+        "longitude": 36.22777777777778,
+        "students": 8000
+    },
+    {
+        "name": "Kryvyi Rih National University",
+        "latitude": 47.9055,
+        "longitude": 33.4013,
+        "students": 20000
+    },
+    {
+        "name": "Kyiv National Economic University",
+        "latitude": 50.45638888888889,
+        "longitude": 30.440833333333334,
+        "students": 20000
+    },
+    {
+        "name": "Kyiv National University of Construction and Architecture", 
+        "latitude": 50.42717481413772,
+        "longitude": 30.46591090744658,
+        "students": 10500
+    },
+    {
+        "name": "Lviv Polytechnic",
+        "latitude": 49.83555555555556,
+        "longitude": 24.014722222222222,
+        "students": 35000
+    },
+    {
+        "name": "Zaporizhzhia National Technical University",
+        "latitude": 47.8175,
+        "longitude": 35.18444444444444,
+        "students": 7403
+    },
+    {
+        "name": "Cherkasy National University",
+        "latitude": 49.4551,
+        "longitude": 32.0445,
+        "students": 6000
+    },
+    {
+        "name": "Crimea State Medical University named after S. I. Georgievsky",
+        "latitude": 44.96083333333333,
+        "longitude": 34.08777777777778,
+        "student": 5000
+    },
+    {
+        "name": "Danylo Halytsky Lviv National Medical University",
+        "latitude": 49.836,
+        "longitude": 24.049,
+        "students": 6000
+    },
+    {
+        "name": "Dnipro State Medical University",
+        "latitude": 48.461111111111116,
+        "longitude": 35.056666666666665,
+        "students": 4500
+    },
+    {
+        "name": "Ivano-Frankivsk National Medical University",
+        "latitude": 48.9216,
+        "longitude": 24.7088,
+        "students": 4800
+    },
+    {
+        "name": "Kharkiv National Medical University",
+        "latitude": 50.0091,
+        "longitude": 36.2285,
+        "students": 10000
+    },
+    {
+        "name": "Hlukhiv National Pedagogical University of Oleksandr Dovzhenko",
+        "latitude": 51.67515,
+        "longitude": 33.91018,
+        "students": 5000
+    },
+    {
+        "name": "Kryvyi Rih State Pedagogical University",
+        "latitude": 47.907377,
+        "longitude": 33.411869,
+        "students": 6000
+    },
+    {
+        "name": "Luhansk Taras Shevchenko National Pedagogical University",
+        "latitude": 48.565,
+        "longitude": 39.31666666666667,
+        "students": 15000,
+        "occupied": "True"
+    },
+    {
+        "name": "National Pedagogical Dragomanov University",
+        "latitude": 50.44472222222222,
+        "longitude": 30.506944444444443,
+        "students": 36000
+    },
+    {
+        "name": "Nizhyn Pedagogical University",
+        "latitude": 51.053475315481265,
+        "longitude": 31.881388869398243,
+        "students": 8500
+    },
+    {
+        "name": "Ternopil Volodymyr Hnatyuk National Pedagogical University", 
+        "latitude": 49.545915416896115,
+        "longitude": 25.565801594426333,
+        "students": 7209
+    },
+    {
+        "name": "K. D. Ushinsky South Ukrainian National Pedagogical University",
+        "latitude": 46.4805,
+        "longitude": 30.7213,
+        "students": 6263
+    },
+    {
+        "name": "Vasyl Stefanyk Prycarpathian National University",
+        "latitude": 48.91520555555555,
+        "longitude": 24.701191666666666,
+        "students": 18000
+    },
+    {
+        "name": "Kharkiv State Academy",
+        "latitude": 50.00415,
+        "longitude": 36.21732,
+        "students": 2000
+    },
+    {
+        "name": "Hetman Petro Sahaidachnyi National Ground Forces Academy", 
+        "latitude": 49.8243,
+        "longitude": 24.01736,
+        "students": 3000
+    },
+    {
+        "name": "Odesa Military Academy",
+        "latitude": 46.441,
+        "longitude": 30.742,
+        "students": 7017
+    },
+    {
+        "name": "Karpenko-Karyi University of Cheater, Cinema and Television",
+        "latitude": 50.45388888888889,
+        "longitude": 30.506944444444443,
+        "students": 1590
+    },
+   {
+        "name": "Kharkiv State Academy of Culture",
+        "latitude": 49.99395802455622, 
+        "longitude": 36.229529593924106,
+        "students": 2573
+    }
+]

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukraine Educational Damage Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <style>
+        body { 
+            font-family: 'Montserrat', sans-serif;
+            text-align: center; 
+            margin: 0;
+            background-color: #121212;
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+        h1 {
+            font-weight: 600;
+            font-size: 2.5rem;
+            margin: 2rem 0 1rem;
+            letter-spacing: 1px;
+        }
+        .description {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            padding: 0 20px;
+        }
+        .description-section {
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+        .description-section h2 {
+            color: #E0E0E0;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .description-section p {
+            color: #CCCCCC;
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin: 0;
+        }
+        #map { 
+            height: 75vh; 
+            width: 90%; 
+            margin: 2rem auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        #controls { 
+            background-color: #1E1E1E;
+            padding: 1.5rem;
+            border-radius: 8px;
+            width: 90%;
+            margin: 1rem auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        input { 
+            padding: 8px 12px;
+            margin: 0 10px;
+            background-color: #2D2D2D;
+            color: #FFFFFF;
+            border: 1px solid #404040;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s ease;
+        }
+        input:focus {
+            outline: none;
+            border-color: #FFFFFF;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 90%;
+            margin: auto;
+            text-align: left;
+        }
+        .left, .right {
+            width: 48%;
+        }
+        .sources {
+            font-size: 0.9em;
+            text-align: left;
+            margin: 2rem auto;
+            width: 90%;
+            color: #AAAAAA;
+        }
+        button {
+            background-color: #FFFFFF;
+            color: #121212;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #E0E0E0;
+            transform: translateY(-1px);
+        }
+        label {
+            color: #FFFFFF;
+            font-weight: 300;
+            margin-right: 5px;
+        }
+        #search {
+            min-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Occupied, Relocated, Resilient</h1>
+    
+    <div class="description">
+        <div class="description-section">
+            <h2>What?</h2>
+            <p>An interactive map tracking Ukrainian universities — damaged, occupied, relocated — alongside attacks on education.</p>
+        </div>
+        
+        <div class="description-section">
+            <h2>Who?</h2>
+            <p>For students, researchers, journalists, and anyone tracing the war's impact on knowledge.</p>
+        </div>
+        
+        <div class="description-section">
+            <h2>Why?</h2>
+            <p>Because when bombs fall on classrooms, the future is under attack.</p>
+        </div>
+    </div>
+
+    <div id="controls">
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date">
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date">
+        <button onclick="filterEvents()">Filter</button>
+        <label for="search">Search University:</label>
+        <input type="text" id="search" placeholder="Enter university name..."/>
+    </div>
+
+    <div id="map"></div>
+    <script src="sketch.js"></script>
+</body>
+</html>
