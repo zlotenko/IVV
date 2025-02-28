@@ -510,6 +510,8 @@ document.head.appendChild(markerAnimationStyle);
 let style = document.createElement('style');
 document.head.appendChild(style);
 
+let universityMarkersMap;
+
 function formatNotes(notes) {
     if (!notes) return '';
     let formattedNotes = '';
@@ -1286,70 +1288,94 @@ function customizeSlider() {
             initializeSearch(universities);
             displayUniversities(universities);
         });
-
-    function initializeSearch(universities) {
-        const searchInput = document.getElementById('search');
-        const searchContainer = document.createElement('div');
-        searchContainer.className = 'search-container';
+        function initializeSearch(universities) {
+            const searchInput = document.getElementById('search');
+            const searchContainer = document.createElement('div');
+            searchContainer.className = 'search-container';
+            
+            // Keep the original input instead of creating a new one
+            searchInput.className = 'university-search';
+            searchInput.placeholder = 'Search university...';
         
-        const universitySearch = document.createElement('input');
-        universitySearch.type = 'text';
-        universitySearch.className = 'university-search';
-        universitySearch.placeholder = 'Search or select university...';
-
-        const resultsContainer = document.createElement('div');
-        resultsContainer.className = 'search-results';
-
-        searchInput.parentNode.replaceChild(searchContainer, searchInput);
-        searchContainer.appendChild(universitySearch);
-        searchContainer.appendChild(resultsContainer);
-
-        universitySearch.addEventListener('input', function(e) {
-            const searchText = e.target.value.toLowerCase();
-            if (searchText.length < 2) {
-                resultsContainer.style.display = 'none';
-                return;
-            }
-
-            const matches = universities.filter(uni => 
-                uni.name.toLowerCase().includes(searchText)
-            );
-
-            if (matches.length > 0) {
-                resultsContainer.innerHTML = matches
-                    .map(uni => `<div class="search-item">${uni.name}</div>`)
-                    .join('');
-                resultsContainer.style.display = 'block';
-            } else {
-                resultsContainer.style.display = 'none';
-            }
-        });
-
-        resultsContainer.addEventListener('click', function(e) {
-            if (e.target.classList.contains('search-item')) {
-                const selectedName = e.target.textContent;
-                universitySearch.value = selectedName;
-                resultsContainer.style.display = 'none';
-
-                const selectedUni = universities.find(uni => uni.name === selectedName);
-                if (selectedUni && selectedUni.marker) {
-                    map.setView([selectedUni.latitude, selectedUni.longitude], 12);
-                    selectedUni.marker.openPopup();
+            const resultsContainer = document.createElement('div');
+            resultsContainer.className = 'search-results';
+        
+            // Wrap the existing input in the container
+            searchInput.parentNode.replaceChild(searchContainer, searchInput);
+            searchContainer.appendChild(searchInput);
+            searchContainer.appendChild(resultsContainer);
+        
+            searchInput.addEventListener('input', function(e) {
+                const searchText = e.target.value.toLowerCase();
+                if (searchText.length < 2) {
+                    resultsContainer.style.display = 'none';
+                    return;
                 }
-            }
-        });
-
-        document.addEventListener('click', function(e) {
-            if (!searchContainer.contains(e.target)) {
-                resultsContainer.style.display = 'none';
-            }
-        });
-    }
+        
+                const matches = universities.filter(uni => 
+                    uni.name.toLowerCase().includes(searchText)
+                );
+        
+                if (matches.length > 0) {
+                    resultsContainer.innerHTML = matches
+                        .map(uni => `<div class="search-item">${uni.name}</div>`)
+                        .join('');
+                    resultsContainer.style.display = 'block';
+                } else {
+                    resultsContainer.style.display = 'none';
+                }
+            });
+        
+            resultsContainer.addEventListener('click', function(e) {
+                if (e.target.classList.contains('search-item')) {
+                    const selectedName = e.target.textContent;
+                    searchInput.value = selectedName;
+                    resultsContainer.style.display = 'none';
+        
+                    // Use universityMarkersMap instead of window.universityMarkersMap
+                    const coords = universityMarkersMap.get(selectedName);
+                    if (coords) {
+                        // Center the map on the selected university
+                        map.setView([coords.lat, coords.lng], 12);
+                        
+                        // Find and open the popup
+                        let foundMarker = false;
+                        universityLayer.eachLayer(function(layer) {
+                            // Check if this layer has a popup
+                            if (layer instanceof L.LayerGroup) {
+                                // If it's a LayerGroup, search through its child layers
+                                layer.eachLayer(function(childLayer) {
+                                    if (childLayer.getPopup() && childLayer.getPopup().getContent().includes(selectedName)) {
+                                        childLayer.openPopup();
+                                        foundMarker = true;
+                                    }
+                                });
+                            } else if (layer.getPopup() && layer.getPopup().getContent().includes(selectedName)) {
+                                layer.openPopup();
+                                foundMarker = true;
+                            }
+                        });
+                        
+                        if (!foundMarker) {
+                            console.log('Could not find marker for:', selectedName);
+                        }
+                    }
+                }
+            });
+        
+            // Close results when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!searchContainer.contains(e.target)) {
+                    resultsContainer.style.display = 'none';
+                }
+            });
+        }
 
     function displayUniversities(universities) {
         // Create a feature group for better performance management
         universityLayer = L.featureGroup().addTo(map);
         
+        universityMarkersMap = new Map();
         // Prepare data for batch processing
         const circleMarkers = [];
         const iconMarkers = [];
@@ -1368,7 +1394,7 @@ function customizeSlider() {
                 console.warn("Skipping invalid university data:", university);
                 return;
             }
-    
+            universityMarkersMap.set(university.name, { lat, lng });
             // Calculate size based on student population
             let markerSize = Math.sqrt(numStudents) * 0.1;
             let markerColor = "#0091ff";
@@ -1504,8 +1530,6 @@ function customizeSlider() {
                         fillOpacity: markerData.fillOpacity,
                         weight: 1,
                         opacity: 0.8,
-                        // Performance optimizations
-                        renderer: L.canvas(),
                         interactive: true,
                         bubblingMouseEvents: false
                     });
