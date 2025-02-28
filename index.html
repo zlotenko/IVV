@@ -7,11 +7,20 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/distribute/nouislider.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/distribute/nouislider.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
     <style>
         body { 
             font-family: 'Montserrat', sans-serif;
@@ -59,7 +68,7 @@
             background-color: #1E1E1E;
             padding: 1.5rem;
             border-radius: 8px;
-            width: 90%;
+            width: 80%;
             margin: 1rem auto;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
@@ -126,7 +135,7 @@
     <div class="description">
         <div class="description-section">
             <h2>What?</h2>
-            <p>An interactive map tracking Ukrainian universities — damaged, occupied, relocated — alongside attacks on education.</p>
+            <p>An interactive map tracking Ukrainian universities — damaged, occupied, relocated — alongside attacks on education and civilians.</p>
         </div>
         
         <div class="description-section">
@@ -141,10 +150,14 @@
     </div>
 
     <div id="controls">
-        <label for="start-date">Start Date:</label>
-        <input type="date" id="start-date">
-        <label for="end-date">End Date:</label>
-        <input type="date" id="end-date">
+        <label for="start-date-display">Start Date:</label>
+        <input type="text" id="start-date-display" placeholder="DD/MM/YYYY" readonly>
+        <input type="date" id="start-date" style="display: none;">
+        
+        <label for="end-date-display">End Date:</label>
+        <input type="text" id="end-date-display" placeholder="DD/MM/YYYY" readonly>
+        <input type="date" id="end-date" style="display: none;">
+        
         <button onclick="filterEvents()">Filter</button>
         <label for="search">Search University:</label>
         <input type="text" id="search" placeholder="Enter university name..."/>
