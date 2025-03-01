@@ -589,29 +589,34 @@ document.addEventListener("DOMContentLoaded", function () {
         // Event icons legend
         div.innerHTML = '<h4 style="margin: 2px 0; font-weight: 600;">Event Types</h4>';
         div.innerHTML += `
+        <div class="legend-item">
+            <input type="checkbox" class="legend-checkbox" id="missile-attack" checked>
+            <img src="icons/missile.png" style="margin: 1px 8px 1px 0"> Shelling/artillery/missile attack
+        </div>`;
+        div.innerHTML += `
             <div class="legend-item">
                 <input type="checkbox" class="legend-checkbox" id="drone-strike" checked>
                 <img src="icons/drone.png" style="margin: 1px 8px 1px 0"> Air/drone strike
             </div>`;
         div.innerHTML += `
             <div class="legend-item">
-                <input type="checkbox" class="legend-checkbox" id="missile-attack" checked>
-                <img src="icons/missile.png" style="margin: 1px 8px 1px 0"> Shelling/artillery/missile attack
+                <input type="checkbox" class="legend-checkbox" id="grenade" checked>
+                <img src="icons/grenade.png" style="margin: 1px 8px 1px 0"> Grenade
+            </div>`;
+            div.innerHTML += `
+            <div class="legend-item">
+                <input type="checkbox" class="legend-checkbox" id="abduction" checked>
+                <img src="icons/abduction.png" style="margin: 1px 8px 1px 0"> Abduction/forced disappearance
             </div>`;
         div.innerHTML += `
             <div class="legend-item">
-                <input type="checkbox" class="legend-checkbox" id="explosive" checked>
+                <input type="checkbox" class="legend-checkbox" id="mines" checked>
                 <img src="icons/mines.png" style="margin: 1px 8px 1px 0"> Remote explosive/landmine/IED
             </div>`;
         div.innerHTML += `
             <div class="legend-item">
                 <input type="checkbox" class="legend-checkbox" id="attack" checked>
                 <img src="icons/attack.png" style="margin: 1px 8px 1px 0"> Attack
-            </div>`;
-        div.innerHTML += `
-            <div class="legend-item">
-                <input type="checkbox" class="legend-checkbox" id="abduction" checked>
-                <img src="icons/abduction.png" style="margin: 1px 8px 1px 0"> Abduction/forced disappearance
             </div>`;
             div.innerHTML += `
             <div class="legend-item">
@@ -1638,6 +1643,7 @@ let iconMap = {
     "Remote explosive/landmine/IED": L.icon({ iconUrl: 'icons/mines.png', iconSize: [32, 32] }),
     "Attack": L.icon({ iconUrl: 'icons/attack.png', iconSize: [32, 32] }),
     "Abduction/forced disappearance": L.icon({ iconUrl: 'icons/abduction.png', iconSize: [32, 32] }),
+    "Grenade": L.icon({ iconUrl: 'icons/grenade.png', iconSize: [32, 32] }),
     "Other": L.icon({ iconUrl: 'icons/other.png', iconSize: [32, 32] }) // Default icon for other types
 };
 
@@ -1645,9 +1651,10 @@ let iconMap = {
         switch(eventType) {
             case "Air/drone strike": return "drone-strike";
             case "Shelling/artillery/missile attack": return "missile-attack";
-            case "Remote explosive/landmine/IED": return "explosive";
+            case "Remote explosive/landmine/IED": return "mines";
             case "Attack": return "attack";
             case "Abduction/forced disappearance": return "abduction";
+            case "Grenade": return "grenade";
             default: return "other"; 
         }
     }
