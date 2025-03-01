@@ -586,6 +586,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let legend = L.control({position: 'topleft'});
     legend.onAdd = function (map) {
         let div = L.DomUtil.create('div', 'legend');
+        div.style.marginTop = '50px';
         // Event icons legend
         div.innerHTML = '<h4 style="margin: 2px 0; font-weight: 600;">Event Types</h4>';
         div.innerHTML += `
@@ -612,11 +613,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="legend-item">
                 <input type="checkbox" class="legend-checkbox" id="mines" checked>
                 <img src="icons/mines.png" style="margin: 1px 8px 1px 0"> Remote explosive/landmine/IED
-            </div>`;
-            div.innerHTML += `
-            <div class="legend-item">
-                <input type="checkbox" class="legend-checkbox" id="other" checked>
-                <img src="icons/other.png" style="margin: 1px 8px 1px 0"> Other
             </div>`;
         // University markers legend
         div.innerHTML += '<h4 style="margin: 2px 0; font-weight: 600;">University Status</h4>';
@@ -1642,7 +1638,6 @@ let iconMap = {
     "Remote explosive/landmine/IED": L.icon({ iconUrl: 'icons/mines.png', iconSize: [32, 32] }),
     "Abduction/forced disappearance": L.icon({ iconUrl: 'icons/abduction.png', iconSize: [32, 32] }),
     "Grenade": L.icon({ iconUrl: 'icons/grenade.png', iconSize: [32, 32] }),
-    "Other": L.icon({ iconUrl: 'icons/other.png', iconSize: [32, 32] }) // Default icon for other types
 };
 
     function getCheckboxId(eventType) {
@@ -1652,7 +1647,7 @@ let iconMap = {
             case "Remote explosive/landmine/IED": return "mines";
             case "Abduction/forced disappearance": return "abduction";
             case "Grenade": return "grenade";
-            default: return "other"; 
+            default: return null; 
         }
     }
     // Add this new function for marker clustering
