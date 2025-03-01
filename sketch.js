@@ -1,6 +1,16 @@
 // Create style elements for search functionality
 let searchStyle = document.createElement('style');
 searchStyle.innerHTML = `
+    #map {
+        height: 85vh !important; /* Increase map height to 85% of viewport height */
+        margin-bottom: 20px;
+    }
+    
+    /* Adjust legend position to ensure it's fully visible */
+    .legend {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
     .description {
         display: grid;
         grid-template-areas: "what who why";
@@ -591,7 +601,7 @@ document.addEventListener("DOMContentLoaded", function () {
         div.innerHTML += `
             <div class="legend-item">
                 <input type="checkbox" class="legend-checkbox" id="explosive" checked>
-                <img src="icons/explosive.png" style="margin: 1px 8px 1px 0"> Remote explosive/landmine/IED
+                <img src="icons/mines.png" style="margin: 1px 8px 1px 0"> Remote explosive/landmine/IED
             </div>`;
         div.innerHTML += `
             <div class="legend-item">
@@ -602,6 +612,11 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="legend-item">
                 <input type="checkbox" class="legend-checkbox" id="abduction" checked>
                 <img src="icons/abduction.png" style="margin: 1px 8px 1px 0"> Abduction/forced disappearance
+            </div>`;
+            div.innerHTML += `
+            <div class="legend-item">
+                <input type="checkbox" class="legend-checkbox" id="other" checked>
+                <img src="icons/other.png" style="margin: 1px 8px 1px 0"> Other
             </div>`;
         // University markers legend
         div.innerHTML += '<h4 style="margin: 2px 0; font-weight: 600;">University Status</h4>';
@@ -1617,13 +1632,14 @@ function simplifyGeoJSON(geoJSON, tolerance) {
     return simplified;
 }
 
-    let iconMap = {
-        "Air/drone strike": L.icon({ iconUrl: 'icons/drone.png', iconSize: [32, 32] }),
-        "Shelling/artillery/missile attack": L.icon({ iconUrl: 'icons/missile.png', iconSize: [32, 32] }),
-        "Remote explosive/landmine/IED": L.icon({ iconUrl: 'icons/explosive.png', iconSize: [32, 32] }),
-        "Attack": L.icon({ iconUrl: 'icons/attack.png', iconSize: [32, 32] }),
-        "Abduction/forced disappearance": L.icon({ iconUrl: 'icons/abduction.png', iconSize: [32, 32] })
-    };
+let iconMap = {
+    "Air/drone strike": L.icon({ iconUrl: 'icons/drone.png', iconSize: [32, 32] }),
+    "Shelling/artillery/missile attack": L.icon({ iconUrl: 'icons/missile.png', iconSize: [32, 32] }),
+    "Remote explosive/landmine/IED": L.icon({ iconUrl: 'icons/mines.png', iconSize: [32, 32] }),
+    "Attack": L.icon({ iconUrl: 'icons/attack.png', iconSize: [32, 32] }),
+    "Abduction/forced disappearance": L.icon({ iconUrl: 'icons/abduction.png', iconSize: [32, 32] }),
+    "Other": L.icon({ iconUrl: 'icons/other.png', iconSize: [32, 32] }) // Default icon for other types
+};
 
     function getCheckboxId(eventType) {
         switch(eventType) {
@@ -1632,7 +1648,7 @@ function simplifyGeoJSON(geoJSON, tolerance) {
             case "Remote explosive/landmine/IED": return "explosive";
             case "Attack": return "attack";
             case "Abduction/forced disappearance": return "abduction";
-            default: return null;
+            default: return "other"; 
         }
     }
     // Add this new function for marker clustering
