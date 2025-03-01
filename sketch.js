@@ -613,11 +613,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 <input type="checkbox" class="legend-checkbox" id="mines" checked>
                 <img src="icons/mines.png" style="margin: 1px 8px 1px 0"> Remote explosive/landmine/IED
             </div>`;
-        div.innerHTML += `
-            <div class="legend-item">
-                <input type="checkbox" class="legend-checkbox" id="attack" checked>
-                <img src="icons/attack.png" style="margin: 1px 8px 1px 0"> Attack
-            </div>`;
             div.innerHTML += `
             <div class="legend-item">
                 <input type="checkbox" class="legend-checkbox" id="other" checked>
@@ -1645,7 +1640,6 @@ let iconMap = {
     "Air/drone strike": L.icon({ iconUrl: 'icons/drone.png', iconSize: [32, 32] }),
     "Shelling/artillery/missile attack": L.icon({ iconUrl: 'icons/missile.png', iconSize: [32, 32] }),
     "Remote explosive/landmine/IED": L.icon({ iconUrl: 'icons/mines.png', iconSize: [32, 32] }),
-    "Attack": L.icon({ iconUrl: 'icons/attack.png', iconSize: [32, 32] }),
     "Abduction/forced disappearance": L.icon({ iconUrl: 'icons/abduction.png', iconSize: [32, 32] }),
     "Grenade": L.icon({ iconUrl: 'icons/grenade.png', iconSize: [32, 32] }),
     "Other": L.icon({ iconUrl: 'icons/other.png', iconSize: [32, 32] }) // Default icon for other types
@@ -1656,7 +1650,6 @@ let iconMap = {
             case "Air/drone strike": return "drone-strike";
             case "Shelling/artillery/missile attack": return "missile-attack";
             case "Remote explosive/landmine/IED": return "mines";
-            case "Attack": return "attack";
             case "Abduction/forced disappearance": return "abduction";
             case "Grenade": return "grenade";
             default: return "other"; 
