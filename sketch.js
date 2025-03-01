@@ -844,10 +844,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Also check event type checkboxes
     filteredEvents = filteredEvents.filter(event => {
-        if (event.sub_event_type && event.sub_event_type.toLowerCase().includes('attack')) {
-            return false;
-        }
-        
         let eventTypeId = getCheckboxId(event.sub_event_type);
         let checkbox = document.getElementById(eventTypeId);
         return checkbox && checkbox.checked;
